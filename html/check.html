@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check Checkbox</title>
+</head>
+<body>
+    <h2>Check Checkbox</h2>
+    <form id="myForm">
+        <label for="myCheckbox">Check this box:</label>
+        <input type="checkbox" id="myCheckbox" name="myCheckbox">
+        <br>
+        <button type="button" onclick="checkCheckbox()">Check</button>
+    </form>
+    <p id="message" style="color: red;"></p>
+
+    <script>
+        // JavaScript function to check if the checkbox is selected
+        function checkCheckbox() {
+            const checkbox = document.getElementById("myCheckbox");
+            const message = document.getElementById("message");
+
+            if (checkbox.checked) {
+                // Checkbox is checked
+                message.textContent = "Checkbox is selected.";
+            } else {
+                // Checkbox is not checked
+                message.textContent = "Checkbox is not selected.";
+            }
+        }
+    </script>
+</body>
+</html>

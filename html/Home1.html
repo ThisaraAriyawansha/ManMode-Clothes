@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop Website</title>
+    <!-- Custom css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+<style>
+	body {
+		background-image: url("9.webp");
+		background-position: center;
+	}
+</style>
+
+<body>
+    <!-- Header Section -->
+    <div class="header" id="home">
+        <nav id="navbar">
+            <a href="#home" class="logo">Coffee Shop <span>.</span></a>
+            <div class="links" id="nav">
+                <a href="#home">Home</a>
+                <a href="#team">About</a>
+                
+                <a href="#service">Services</a>
+               
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="fas fa-bars" id="menu-btn" onclick="openmenu()"></div>
+            <div class="fa-solid fa-xmark" id="close" onclick="closemenu()"></div>
+        </nav>
+        <div class="content">
+           
+            <h1>start your day with <br>a coffee</h1>
+            <button class="btn" onclick="redirectToLogin()">Buy Now</button>
+        </div>
+    </div>

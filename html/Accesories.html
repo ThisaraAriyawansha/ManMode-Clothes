@@ -1,0 +1,234 @@
+<html>
+    <head>
+        <title>ACCESSORIES</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+
+        <style type="text/css">
+
+        .left-side {
+            float: left;
+            width: 75%;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        /* Style for right side */
+        .right-side {
+            float: left;
+            width: 25%;
+            background-color: #e0e0e0;
+            padding: 20px;
+        }
+
+        /* Clear floats to prevent container collapse */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+            #A{
+                font-family: Californian FB;
+            }
+            #cart {
+                border: 1px solid #ccc;
+                padding: 10px;
+                max-width: 300px;
+            }
+            .cart-item {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 10px;
+            }
+            .p1,.p2,.p3,.p4,.p5,.p6,.p7,.p8{
+                text-decoration: line-through;
+            }
+            .n1,.n2,.n3,.n4,.n5,.n6,.n6,.n7,.n8{
+                color: gold;
+            }
+            #btn{
+                bottom: 20px;
+                right: 20px;
+            }
+        </style>
+    
+    </head>
+    <body><br><br>
+        <center><h1 id="A">ManMode Clothes</h1></center><br><br>
+    <div class="left-side">
+    <div  class="container">
+    <div class="row">
+        <div class="col">
+    <div class="product">
+        <div class="card" style="width: 18rem;">
+            <img src="20.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text"><center>Titan Watch</center></p>
+                  <h6 class="p1">$130.50</h6><h5 class="n1">$120.50</h5>
+                  <button onclick="addToCart('Titan Watch', 120.00)" class="btn btn-outline-secondary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+            
+       
+    </div>
+    <div class="col">
+    <div class="product">
+        <div class="card" style="width: 18rem;">
+            <img src="22.webp" class="card-img-top" alt="..." height="285">
+            <div class="card-body">
+                <p class="card-text"><center>Nike Shoes</center></p>
+                <h6 class="p2">$114.50</h6><h5 class="n2">$104.50</h5>
+                <button onclick="addToCart('Nike Shoes', 104.00)" class="btn btn-outline-secondary">Add to Cart</button>
+            </div>
+          </div>
+        
+    </div>
+</div>
+
+
+<div class="col">
+    <div class="product">
+        <div class="card" style="width: 18rem;">
+            <img src="23.webp" class="card-img-top" alt="..." height="285">
+            <div class="card-body">
+                <p class="card-text"><center>Travel Bags</center></p>
+                <h6 class="p3">$144.50</h6><h5 class="n3">$133.50</h5>
+                <button onclick="addToCart('Travel Bags', 133.00)" class="btn btn-outline-secondary">Add to Cart</button>
+            </div>
+          </div>
+    </div>
+</div></div><br><br>
+<div class="row">
+<div class="col">
+    <div class="product">
+        <div class="card" style="width: 18rem;">
+            <img src="24.jpg" class="card-img-top" alt="..." height="285">
+                <div class="card-body">
+                    <p class="card-text"><center>Tie</center></p>
+                    <h6 class="p4">$90.50</h6><h5 class="n4">$80.50</h5>
+                <button onclick="addToCart('Tie', 80.00)" class="btn btn-outline-secondary">Add to Cart</button>
+            </div>
+          </div>
+    </div>
+</div>
+
+        <div class="col">
+    <div class="product">
+        <div class="card" style="width: 18rem;">
+            <img src="sunglass.jpg" class="card-img-top" alt="..." height="288">
+            <div class="card-body">
+                <p class="card-text"><center>Sunglasses</center></p>
+                  <h6 class="p5">$130.50</h6><h5 class="n5">$120.50</h5>
+                  <button onclick="addToCart('Sunglasses', 120.00)" class="btn btn-outline-secondary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+            
+       
+    </div>
+    <div class="col">
+    <div class="product">
+        <div class="card" style="width: 18rem;">
+            <img src="belts.jpg" class="card-img-top" alt="..." height="285">
+            <div class="card-body">
+                <p class="card-text"><center>Belt</center></p>
+                <h6 class="p6">$114.50</h6><h5 class="n6">$104.50</h5>
+                <button onclick="addToCart('Belt', 104.00)" class="btn btn-outline-secondary">Add to Cart</button>
+            </div>
+          </div>
+        
+    </div>
+</div></div><br><br>
+
+<div class="row">
+<div class="col">
+    <div class="product">
+        <div class="card" style="width: 18rem;">
+            <img src="bangle.webp" class="card-img-top" alt="..." height="285">
+            <div class="card-body">
+                <p class="card-text"><center>Bangle</center></p>
+                <h6 class="p7">$144.50</h6><h5 class="n7">$133.50</h5>
+                <button onclick="addToCart('Bangle', 133.00)" class="btn btn-outline-secondary">Add to Cart</button>
+            </div>
+          </div>
+    </div>
+</div>
+<div class="col">
+    <div class="product">
+        <div class="card" style="width: 18rem;">
+            <img src="perfume.jpg" class="card-img-top" alt="..." height="285">
+                <div class="card-body">
+                    <p class="card-text"><center>Perfume</center></p>
+                    <h6 class="p8">$90.50</h6><h5 class="n8">$80.50</h5>
+                <button onclick="addToCart('Perfume', 80.00)" class="btn btn-outline-secondary">Add to Cart</button>
+            </div>
+          </div>
+    </div>
+</div>
+<div class="col">
+    <div class="product">
+        <div class="card" style="width: 18rem;">
+            <img src="cap.jpg" class="card-img-top" alt="..." height="285">
+                <div class="card-body">
+                    <p class="card-text"><center>Caps</center></p>
+                    <h6 class="p8">$90.50</h6><h5 class="n8">$80.50</h5>
+                <button onclick="addToCart('Cap', 80.00)" class="btn btn-outline-secondary">Add to Cart</button>
+            </div>
+          </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<br><br>
+
+
+<div class="right-side">
+    <div id="cart">
+        <h2>Shopping Cart</h2><br>
+        <div id="cart-items">
+        </div>
+        <p>Total: $<span id="cart-total">0.00</span></p>
+    </div>
+
+    <script>
+        
+        const cart = [];
+
+        function addToCart(productName, price) {
+            cart.push({ name: productName, price: price });
+            updateCartDisplay();
+        }
+
+        // Function to update the cart display
+        function updateCartDisplay() {
+            const cartItemsContainer = document.getElementById('cart-items');
+            const cartTotalElement = document.getElementById('cart-total');
+
+            cartItemsContainer.innerHTML = ''; // Clear the cart display
+
+            let total = 0;
+
+            cart.forEach(item => {
+                const cartItemElement = document.createElement('div');
+                cartItemElement.classList.add('cart-item');
+                cartItemElement.innerHTML = `<span>${item.name}</span><span>$${item.price.toFixed(2)}</span>`;
+                cartItemsContainer.appendChild(cartItemElement);
+
+                total += item.price;
+            });
+
+            cartTotalElement.textContent = total.toFixed(2);
+        }
+    </script>
+    </div><br><br>
+    <a href="login.html"><button type="button" class="btn btn-outline-secondary">Buy Now</button></a>
+    <a href="Home.html"><button type="button" class="btn btn-outline-secondary">Back to homepage</button></a>
+</body>
+
+</html>

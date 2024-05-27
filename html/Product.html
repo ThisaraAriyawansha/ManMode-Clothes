@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CLOTHES</title>
+    <style type="text/css">
+        body {
+            font-family: 'Californian FB', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Californian FB', sans-serif;
+        }
+
+        .left-side {
+            float: left;
+            width: 75%;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .right-side {
+            float: left;
+            width: 25%;
+            background-color: #e0e0e0;
+            padding: 20px;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        #A {
+            font-family: 'Californian FB', sans-serif;
+        }
+
+        #cart {
+            border: 1px solid #ccc;
+            padding: 10px;
+            max-width: 300px;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .p1,
+        .p2,
+        .p3,
+        .p4,
+        .p5,
+        .p6,
+        .p7,
+        .p8 {
+            text-decoration: line-through;
+        }
+
+        .n1,
+        .n2,
+        .n3,
+        .n4,
+        .n5,
+        .n6,
+        .n6,
+        .n7,
+        .n8 {
+            color: gold;
+        }
+
+        #btn {
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .container {
+            margin: 0 auto;
+            width: 80%;
+        }
+
+        .product {
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .card {
+            width: 18rem;
+            margin: 0 auto;
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-body {
+            text-align: center;
+        }
+
+        button {
+            background-color: #f8f9fa;
+            border: 1px solid #6c757d;
+            color: #6c757d;
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #6c757d;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <br><br>
+    <h1 id="A">ManMode Clothes</h1>
+    <br><br>
+    <div class="left-side">
+        <div class="container">
+            <div class="product">
+                <div class="card">
+                    <img src="21.webp" class="card-img-top" alt="..." height="285">
+                    <div class="card-body">
+                        <p class="card-text"><center>Ricky Shirt</center></p>
+                        <h6 class="p1">$130.50</h6>
+                        <h5 class="n1">$120.50</h5>
+                        <button onclick="addToCart('Sunglasses', 120.00)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add other product cards here -->
+
+        </div>
+    </div>
+
+    <div class="right-side">
+        <div id="cart">
+            <h2>Shopping Cart</h2><br>
+            <div id="cart-items"></div>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+        </div>
+
+        <script>
+            const cart = [];
+
+            function addToCart(productName, price) {
+                cart.push({
+                    name: productName,
+                    price: price
+                });
+                updateCartDisplay();
+            }
+
+            function updateCartDisplay() {
+                const cartItemsContainer = document.getElementById('cart-items');
+                const cartTotalElement = document.getElementById('cart-total');
+
+                cartItemsContainer.innerHTML = '';
+
+                let total = 0;
+
+                cart.forEach(item => {
+                    const cartItemElement = document.createElement('div');
+                    cartItemElement.classList.add('cart-item');
+                    cartItemElement.innerHTML = `<span>${item.name}</span><span>$${item.price.toFixed(2)}</span>`;
+                    cartItemsContainer.appendChild(cartItemElement);
+
+                    total += item.price;
+                });
+
+                cartTotalElement.textContent = total.toFixed(2);
+            }
+        </script>
+    </div>
+    <br><br>
+    <a href="login.html"><button type="button">Buy Now</button></a>
+    <a href="Home.html"><button type="button">Back to homepage</button></a>
+</body>
+
+</html>
