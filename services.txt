@@ -1,0 +1,31 @@
+<div class="container">
+            <div class="row">
+              <div class="col">
+                  <div class="card" style="width: 18rem;" id="C">
+                      <img src="13.jpg" class="card-img-top" alt="..." height="220" width="288">
+                      <div class="card-body">
+                          <h6><b>FREE SHOPPING</b></h6>
+                        <p class="card-text">Free shopping on all local order or order above 200$</p>
+                      </div>
+                    </div>
+              </div>
+              <div class="col">
+                  <div class="card" style="width: 18rem;" id="D">
+                      <img src="14re.jpg" class="card-img-top" alt="..." height="220" width="288">
+                      <div class="card-body">
+                          <h6><b>30 Days Return</b></h6>
+                        <p class="card-text">Simply  return it within 30 days for an exchange.</p>
+                      </div>
+                    </div>
+              </div>
+              <div class="col">
+                  <div class="card" style="width: 18rem;" id="E">
+                      <img src="15re.png" class="card-img-top" alt="..." height="220" width="285">
+                      <div class="card-body">
+                          <h6><b>100%  Payment Secure</b></h6>
+                        <p class="card-text">Simply return it within 30 days for an exchange.</p>
+                      </div>
+                    </div>
+              </div>
+            </div>
+          </div>
